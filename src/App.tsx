@@ -1,9 +1,11 @@
 import { Box } from '@mui/material';
 import PixScreen from './pages/PixScreen';
-import './styles/global.css';
+import GlobalStyles from './styles/global';
+
 
 const App = () => (
   <Box display="flex" flexDirection="column" width="100%" height="100%" position="relative">
+    <GlobalStyles />
     <PixScreen />
   </Box>
 )
