@@ -1,8 +1,8 @@
 import { Box, Typography } from '@mui/material'
 import { type Props } from './types'
-import ReactLogo from '../../assets/logo.svg'
+import ReactLogo from 'src/assets/logo.svg'
 
-const Header = ({ title }: Props): JSX.Element => (
+const Header = ({ title }: Props) => (
   <Box
     display="flex"
     flexDirection="column"

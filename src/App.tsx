@@ -1,6 +1,5 @@
-import { Box, ThemeProvider, createTheme } from '@mui/material'
-import PixScreen from './screens/PixScreen'
-import GlobalStyles from './styles/global'
+import { ThemeProvider, createTheme } from '@mui/material'
+import Default from './components/Default'
 
 const theme = createTheme({
   typography: {
@@ -8,12 +7,9 @@ const theme = createTheme({
   }
 })
 
-const App = (): JSX.Element => (
+const App = () => (
   <ThemeProvider theme={theme}>
-    <Box display="flex" flexDirection="column" width="100%" height="100%" position="relative">
-      <GlobalStyles />
-      <PixScreen />
-    </Box>
+    <Default />
   </ThemeProvider>
 )
 
