@@ -1,9 +1,11 @@
 {
-  "editor.defaultFormatter": "vscode.typescript-language-features",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
   "editor.codeActionsOnSave": {
     "source.fixAll": true,
+    "source.fixAll.eslint": true,
+    "source.formatDocument": true,
     "source.organizeImports": false
   },
   "search.exclude": {
