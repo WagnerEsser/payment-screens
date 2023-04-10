@@ -1,0 +1,13 @@
+{
+  "editor.defaultFormatter": "vscode.typescript-language-features",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.organizeImports": false
+  },
+  "search.exclude": {
+    "coverage": true
+  },
+  "typescript.preferences.quoteStyle": "single"
+}
