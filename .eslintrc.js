@@ -6,7 +6,6 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   extends: [
     'eslint:recommended',
-    'plugin:react/recommended',
     'standard-with-typescript',
     'plugin:react/recommended',
     'plugin:react/jsx-runtime'
