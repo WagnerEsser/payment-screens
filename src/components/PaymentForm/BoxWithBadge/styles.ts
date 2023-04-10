@@ -21,7 +21,6 @@ export const Wrapper = styled(Box)<WrapperProps>`
 Wrapper.defaultProps = {
   position: 'relative',
   width: '430px',
-  height: '137px',
   borderRadius: '10px',
   padding: '20px'
 }

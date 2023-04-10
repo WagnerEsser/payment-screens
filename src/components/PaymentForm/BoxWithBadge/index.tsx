@@ -14,7 +14,7 @@ const BoxWithBadge = ({ badgeText, children, selected, changeSelected }: Props) 
         <Typography
           fontSize="18px"
           lineHeight="24px"
-          fontWeight={800}
+          fontWeight={700}
           paddingX="20px"
           borderRadius="100px"
           sx={{ bgcolor: '#E5E5E5' }}

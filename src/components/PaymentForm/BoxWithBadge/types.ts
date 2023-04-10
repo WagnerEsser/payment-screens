@@ -1,6 +1,6 @@
 export interface Props {
   badgeText: string
-  children: JSX.Element[]
+  children: JSX.Element | JSX.Element[]
   changeSelected: React.Dispatch<React.SetStateAction<boolean>>
   selected?: boolean
 }

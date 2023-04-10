@@ -35,7 +35,8 @@ module.exports = {
     "@typescript-eslint/triple-slash-reference": "off",
     "prettier/prettier": "error",
     "@typescript-eslint/strict-boolean-expressions": "off",
-    "@typescript-eslint/explicit-function-return-type": "off"
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-unused-vars": "warn"
   },
   settings: {
     react: {
