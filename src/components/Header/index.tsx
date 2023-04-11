@@ -1,6 +1,6 @@
 import { Box, Typography } from '@mui/material'
 import { type Props } from './types'
-import ReactLogo from 'src/assets/logo.svg'
+import Logo from 'src/assets/Logo.svg'
 
 const Header = ({ title }: Props) => (
   <Box
@@ -10,7 +10,7 @@ const Header = ({ title }: Props) => (
     marginTop="36px"
     marginBottom="20px"
   >
-    <img src={ReactLogo} alt="Logo" width={125} />
+    <img src={Logo} alt="Logo" width={125} />
     <Box marginTop="40px">
       <Typography fontSize={24} fontWeight={700}>
         {title}

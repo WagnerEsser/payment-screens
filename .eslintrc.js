@@ -28,15 +28,18 @@ module.exports = {
       jsx: true,
     },
   },
-  plugins: ["react", "@typescript-eslint", "prettier"],
+  plugins: ["react", "@typescript-eslint", "prettier", "react-hooks"],
   rules: {
     "react/jsx-uses-react": "error",
     "react/jsx-uses-vars": "error",
-    "@typescript-eslint/triple-slash-reference": "off",
     "prettier/prettier": "error",
+    "@typescript-eslint/triple-slash-reference": "off",
     "@typescript-eslint/strict-boolean-expressions": "off",
     "@typescript-eslint/explicit-function-return-type": "off",
-    "@typescript-eslint/no-unused-vars": "warn"
+    "@typescript-eslint/no-unused-vars": "warn",
+    "@typescript-eslint/restrict-plus-operands": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
   },
   settings: {
     react: {

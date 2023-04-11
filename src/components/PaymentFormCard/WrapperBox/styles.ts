@@ -16,11 +16,24 @@ export const Wrapper = styled(Box)<WrapperProps>`
     border: 2px solid #03d69d;
     background-color: #f4fbf9;
   }
+
+  :first-child {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+
+  :last-child {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  :nth-child(-n + ${({ qtyItems }) => qtyItems - 1}) {
+    border-bottom: 0;
+  }
 `
 
 Wrapper.defaultProps = {
   position: 'relative',
   width: '430px',
-  borderRadius: '10px',
   padding: '20px'
 }
