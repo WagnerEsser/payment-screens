@@ -12,11 +12,6 @@ export const Wrapper = styled(Box)<WrapperProps>`
     background-color: #e5f5f1;
   }
 
-  :active {
-    border: 2px solid #03d69d;
-    background-color: #f4fbf9;
-  }
-
   :first-child {
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
@@ -27,9 +22,26 @@ export const Wrapper = styled(Box)<WrapperProps>`
     border-bottom-left-radius: 10px;
   }
 
+  // to remove duplicated border
   :nth-child(-n + ${({ qtyItems }) => qtyItems - 1}) {
-    border-bottom: 0;
+    ${({ selected }) => !selected && `border-bottom: 0;`}
+
+    :hover {
+      border: 2px solid #03d69d;
+
+      & + * {
+        border-top: 0;
+      }
+    }
   }
+
+  ${({ selected }) =>
+    selected &&
+    `
+      & + * {
+        border-top: 0 !important;
+      }
+  `}
 `
 
 Wrapper.defaultProps = {
