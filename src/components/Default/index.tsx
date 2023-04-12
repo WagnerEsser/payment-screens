@@ -1,8 +1,9 @@
 import { Box } from '@mui/material'
-import PixScreen from 'src/screens/PixScreen'
 import GlobalStyle from 'src/styles/global'
+import { type Props } from './types'
+import Menu from 'src/components/Menu'
 
-const Default = () => (
+const Default = ({ children }: Props) => (
   <Box display="flex" justifyContent="center">
     <GlobalStyle />
     <Box
@@ -13,7 +14,8 @@ const Default = () => (
       maxWidth="470px"
       height="100vh"
     >
-      <PixScreen />
+      <Menu />
+      {children}
     </Box>
   </Box>
 )
