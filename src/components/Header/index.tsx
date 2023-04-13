@@ -12,7 +12,7 @@ const Header = ({ title }: Props) => (
   >
     <img src={Logo} alt="Logo" width={125} />
     <Box marginTop="40px">
-      <Typography fontSize={24} fontWeight={700}>
+      <Typography fontSize={24} fontWeight={700} textAlign="center">
         {title}
       </Typography>
     </Box>

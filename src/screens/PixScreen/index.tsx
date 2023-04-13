@@ -90,7 +90,7 @@ const PixScreen = () => {
   return (
     <Box width="100%" display="flex" flexDirection="column" alignItems="center" paddingX="20px">
       <Header title="João, como você quer pagar?" />
-      <Box marginTop="10px">{renderPix}</Box>
+      <Box marginTop="13px">{renderPix}</Box>
       <WrapperList marginTop="34px">{renderInstallments}</WrapperList>
       <Footer />
     </Box>
