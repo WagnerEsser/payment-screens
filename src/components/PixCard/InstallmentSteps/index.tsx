@@ -10,14 +10,7 @@ const getState = (step: InstallmentStep) => {
 }
 
 const InstallmentSteps = ({ values }: Props) => (
-  <Box
-    display="flex"
-    flexDirection="column"
-    width="100%"
-    paddingX="16px"
-    marginTop="3px"
-    marginBottom="20px"
-  >
+  <Box display="flex" flexDirection="column" width="100%" marginTop="3px" marginBottom="20px">
     {values.map((step, index) => {
       const nextItem = !!values[index + 1]
 

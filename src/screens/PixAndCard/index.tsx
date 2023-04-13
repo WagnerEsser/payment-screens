@@ -4,41 +4,40 @@ import Footer from 'src/components/Footer'
 import { useMemo } from 'react'
 import QrCode from 'src/assets/QrCode.svg'
 import FileCopyIcon from '@mui/icons-material/FileCopy'
-import { buttonSx } from './styles'
-import Accordion from '@mui/material/Accordion'
+import { AccordionCustom, buttonSx } from './styles'
 import AccordionSummary from '@mui/material/AccordionSummary'
 import AccordionDetails from '@mui/material/AccordionDetails'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
-import Installment from 'src/components/PixCard/Installment'
 import InstallmentSteps from 'src/components/PixCard/InstallmentSteps'
 import { INSTALLMENT_STEPS } from './mockData'
 
 const PixAndCard = () => {
   const renderAccordion = useMemo(
     () => (
-      <Accordion sx={{ padding: '0px' }} elevation={0} style={{ padding: '0px' }}>
+      <AccordionCustom variant="outlined" sx={{ margin: '0px !important', border: 0 }}>
         <AccordionSummary
+          id="accordion-summary"
+          aria-controls="accordion-summary-content"
           expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1a-content"
-          id="panel1a-header"
+          sx={{ padding: 0 }}
         >
           <Typography fontWeight={700} color="#4D4D4D">
             Como funciona?
           </Typography>
         </AccordionSummary>
-        <AccordionDetails>
+        <AccordionDetails sx={{ padding: 0, marginBottom: '20px' }}>
           <Typography>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
             sit amet blandit leo lobortis eget.
           </Typography>
         </AccordionDetails>
-      </Accordion>
+      </AccordionCustom>
     ),
     []
   )
 
   return (
-    <Box width="100%" display="flex" flexDirection="column" alignItems="center" paddingX="20px">
+    <Box width="100%" display="flex" flexDirection="column" alignItems="center">
       <Header title="João, pague a entrada de R$ 15.300,00 pelo Pix" />
       <Box border="2px solid #03D69D" padding="10px" borderRadius="10px">
         <img src={QrCode} alt="qr code" width={332} />
@@ -56,15 +55,9 @@ const PixAndCard = () => {
       </Box>
       <InstallmentSteps values={INSTALLMENT_STEPS} />
       <Box width="100%">
-        <Divider variant="fullWidth" />
+        <Divider sx={{ borderWidth: '1px' }} variant="fullWidth" />
       </Box>
-      <Box
-        width="100%"
-        display="flex"
-        justifyContent="space-between"
-        marginY="20px"
-        paddingX="16px"
-      >
+      <Box width="100%" display="flex" justifyContent="space-between" marginY="20px">
         <Typography fontSize="14px" color="#4D4D4D">
           CET: 0,5%
         </Typography>
@@ -72,9 +65,12 @@ const PixAndCard = () => {
           Total: R$ 30.600,00
         </Typography>
       </Box>
+      <Box width="100%">
+        <Divider sx={{ borderWidth: '1px' }} variant="fullWidth" />
+      </Box>
       {renderAccordion}
       <Box width="100%">
-        <Divider variant="fullWidth" />
+        <Divider sx={{ borderWidth: '1px' }} variant="fullWidth" />
       </Box>
       <Box marginTop="20px" textAlign="center">
         <Typography fontSize="14px" color="#B2B2B2">
