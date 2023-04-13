@@ -16,7 +16,7 @@ const PaymentFormCard = (props: Props) => {
         <Box display="flex" justifyContent="space-between">
           <InstallmentValue quantity={installment} value={installmentValue} />
           <Box display="flex" alignItems="center">
-            <RadioSelector selected={selected} />
+            <RadioSelector size={26} selected={selected} />
           </Box>
         </Box>
         {cashbackPercent && <CashbackValue value={cashbackPercent} />}

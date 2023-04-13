@@ -10,6 +10,8 @@ import AccordionSummary from '@mui/material/AccordionSummary'
 import AccordionDetails from '@mui/material/AccordionDetails'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 import Installment from 'src/components/PixCard/Installment'
+import InstallmentSteps from 'src/components/PixCard/InstallmentSteps'
+import { INSTALLMENT_STEPS } from './mockData'
 
 const PixAndCard = () => {
   const renderAccordion = useMemo(
@@ -52,17 +54,7 @@ const PixAndCard = () => {
           15/12/2021 - 08:17
         </Typography>
       </Box>
-      <Box
-        display="flex"
-        flexDirection="column"
-        width="100%"
-        paddingX="16px"
-        marginTop="3px"
-        marginBottom="20px"
-      >
-        <Installment description="1ª entrada no Pix" value="R$ 15.300,00" />
-        <Installment description="2ª no cartão" value="R$ 15.300,00" />
-      </Box>
+      <InstallmentSteps values={INSTALLMENT_STEPS} />
       <Box width="100%">
         <Divider variant="fullWidth" />
       </Box>
