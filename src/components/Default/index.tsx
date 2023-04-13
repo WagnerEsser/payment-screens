@@ -4,8 +4,9 @@ import { type Props } from './types'
 import Menu from 'src/components/Menu'
 
 const Default = ({ children }: Props) => (
-  <Box display="flex" justifyContent="center">
+  <Box display="flex" alignItems="center" flexDirection="column">
     <GlobalStyle />
+    <Menu />
     <Box
       position="relative"
       display="flex"
@@ -14,7 +15,6 @@ const Default = ({ children }: Props) => (
       maxWidth="470px"
       height="100vh"
     >
-      <Menu />
       {children}
     </Box>
   </Box>
