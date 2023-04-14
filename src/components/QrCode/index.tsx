@@ -1,16 +1,15 @@
-import { Box, Button } from '@mui/material'
+import { Box } from '@mui/material'
 import FileCopyIcon from '@mui/icons-material/FileCopy'
-import { buttonSx } from './styles'
+
 import QrCodeImage from 'src/assets/QrCode.svg'
+import CustomButton from 'src/components/CustomButton'
 
 const QrCode = () => (
-  <Box>
+  <Box textAlign="center">
     <Box border="2px solid #03D69D" padding="10px" borderRadius="10px">
       <img src={QrCodeImage} alt="qr code" width={332} />
     </Box>
-    <Button variant="contained" endIcon={<FileCopyIcon />} sx={buttonSx}>
-      Clique para copiar o QR CODE
-    </Button>
+    <CustomButton title="Clique para copiar o QR CODE" endIcon={<FileCopyIcon />} />
   </Box>
 )
 export default QrCode

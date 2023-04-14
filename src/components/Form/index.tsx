@@ -1,6 +1,7 @@
-import { Autocomplete, Box, Button, TextField } from '@mui/material'
+import { Autocomplete, Box, TextField } from '@mui/material'
 
 import { AUTOCOMPLETE_PROPS, FIELDS, fieldStyle } from './dataMock'
+import CustomButton from 'src/components/CustomButton'
 
 const Form = () => (
   <Box display="flex" flexWrap="wrap">
@@ -17,7 +18,7 @@ const Form = () => (
         <TextField {...params} label={AUTOCOMPLETE_PROPS.label} sx={fieldStyle} />
       )}
     />
-    <Button />
+    <CustomButton title="Pagar" fullWidth />
   </Box>
 )
 
