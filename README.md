@@ -1,3 +1,18 @@
+> Melhorias a serem feitas ainda:
+>
+> - Melhorar a responsividade.
+> - Criar tema com tokens de: cores, tamanhos, espaçamentos, etc.
+> - Controle de estado do formulário.
+> - Melhorar a configuração do lint para ajustar trechos de códigos, como:
+>   - de: `valueExists ? <Component /> : undefined`
+>   - para: `value && <Component />`.
+> - Criar mais alguns componentes que estão repetidos.
+> - Ajustar alguns espaçamentos e tamanhos para deixar fiel ao protótipo.
+> - Possivelmente configurar uma API fake para melhorar o mock de dados, como `json-server`.
+> - Possivelmente aplicar testes unitários com jest.
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

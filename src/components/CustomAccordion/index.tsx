@@ -25,4 +25,5 @@ const CustomAccordion = () => (
     </AccordionDetails>
   </AccordionCustom>
 )
+
 export default CustomAccordion
