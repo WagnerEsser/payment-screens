@@ -3,7 +3,6 @@ import { useMemo, useState, useCallback } from 'react'
 import Header from 'src/components/Header'
 import PaymentFormCard from 'src/components/PaymentFormCard'
 import { type Installment } from './types'
-import { WrapperList } from './styles'
 import { INSTALLMENTS } from './dataMock'
 import Footer from 'src/components/Footer'
 
@@ -91,7 +90,7 @@ const PixScreen = () => {
     <Box width="100%" display="flex" flexDirection="column" alignItems="center" paddingX="20px">
       <Header title="João, como você quer pagar?" />
       <Box marginTop="13px">{renderPix}</Box>
-      <WrapperList marginTop="34px">{renderInstallments}</WrapperList>
+      <Box marginTop="34px">{renderInstallments}</Box>
       <Footer />
     </Box>
   )
