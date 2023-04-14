@@ -15,7 +15,8 @@
     "lint": "eslint .",
     "lint:fix": "eslint --fix",
     "prettier:check": "prettier --check ./src",
-    "prettier:fix": "prettier --write './src/**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc.json"
+    "prettier:fix": "prettier --write './src/**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc.json",
+    "find-deadcode": "ts-prune"
   },
   "dependencies": {
     "@emotion/react": "11.10.6",
@@ -50,6 +51,7 @@
     "eslint-plugin-react": "7.32.2",
     "eslint-plugin-react-hooks": "4.6.0",
     "prettier": "2.8.7",
+    "ts-prune": "0.10.3",
     "typescript": "5.0.4"
   },
   "eslintConfig": {
