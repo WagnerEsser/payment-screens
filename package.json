@@ -4,7 +4,6 @@
   "private": true,
   "engines": {
     "node": "16.x",
-    "npm": "You must use yarn in this project!",
     "yarn": "^1.22.x"
   },
   "scripts": {
