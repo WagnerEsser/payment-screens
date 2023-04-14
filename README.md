@@ -1,4 +1,4 @@
-> Melhorias a serem feitas ainda:
+> Principais melhorias a serem feitas ainda:
 >
 > - Melhorar a responsividade.
 > - Criar tema com tokens de: cores, tamanhos, espaçamentos, etc.
